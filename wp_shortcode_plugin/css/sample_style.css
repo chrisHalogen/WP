@@ -1,0 +1,13 @@
+.div_link{
+    position:relative;
+    height:40px;
+}
+
+.div_link .link{
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
