@@ -1,0 +1,25 @@
+.hpvs_container h4{
+	font-size:20px;
+	line-height: 125%;
+	padding-buttom:0;
+	margin-buttom:0;
+}
+
+.hpvs_container img{
+	float:left;
+	margin-right:10px;
+}
+
+.hpvs_container .hpvs-excerpt{
+	font-size: 16px;
+	padding-top:0;
+	margin-top:0;
+}
+
+.hpvs_container .hpvs-read-more{
+	font-weight: bold;
+}
+
+.hpvs_container .hpvs-img-ex-container{
+	margin-top:-10px;
+}
