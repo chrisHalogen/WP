@@ -1,0 +1,156 @@
+/* Full Widget Styling */
+#chi-full-widget-container {
+  width: fit-content;
+  font-family: Tahoma, Geneva, sans-serif;
+  margin: auto;
+}
+
+/* Filter Styling */
+.chi-filter-container {
+  width: fit-content;
+  margin: auto;
+}
+
+.chi-filter-container table {
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.chi-filter-container h4 {
+  font-size: 20px;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 3px;
+}
+.chi-filter-container p {
+  font-size: 16px;
+  text-align: center;
+}
+.chi-filter-container table td {
+  padding: 15px;
+  width: 75px;
+}
+
+.chi-filter-container table tbody td {
+  color: #636363;
+}
+.chi-filter-container table tbody tr {
+  background-color: #ffffff;
+}
+
+.chi-filter-container .select {
+  padding: 8px 2px;
+  color: #333333;
+  background-color: #eeeeee;
+  border: 1px solid #dddddd;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.chi-filter-container table #submit-btn {
+  padding: 8px 8px;
+  text-decoration: none;
+  color: #dddfe1;
+  background-color: #54585d;
+  border-radius: 5px;
+  border: none;
+  margin: 20px 0;
+  transition: 0.3s;
+}
+
+.chi-filter-container table #submit-btn:hover {
+  color: #ffffff;
+  background-color: #151616;
+
+}
+
+/* Table Styling */
+
+.chi-table-container {
+  width: fit-content;
+  margin: auto;
+}
+
+.chi-table-container table {
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.chi-table-container table td {
+  padding: 15px;
+  width: 250px;
+}
+.chi-table-container table thead td {
+  background-color: #54585d;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 13px;
+  border: 1px solid #54585d;
+}
+.chi-table-container table tbody td {
+  color: #636363;
+  border: 1px solid #dddfe1;
+}
+.chi-table-container table tbody tr {
+  background-color: #f9fafb;
+}
+.chi-table-container table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+/* Radio Button Styling */
+#users-list-form input[type=radio][name=list-order] {
+  display: none;
+}
+
+#users-list-form .radio {
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#users-list-form .radio span {
+  color: black;
+  text-transform: uppercase;
+}
+
+#users-list-form .radio label {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+#users-list-form .radio label::before {
+  content: "\f111";
+  font-family: "Font Awesome 5 Free";
+  font-size: 20px;
+  color: #151616;
+}
+
+#users-list-form .radio input:checked ~ label::before {
+  content: "\f192";
+}
+
+
+/* Pagination Styling */
+.chi-pagination {
+  margin-top: 5px;
+  display: inline-block;
+}
+
+.chi-pagination a {
+  color: #151616;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.chi-pagination a.active {
+  background-color: #54585d;
+  color: white;
+  border-radius: 5px;
+}
+
+.chi-pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 5px;
+}

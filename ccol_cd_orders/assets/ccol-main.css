@@ -1,0 +1,149 @@
+.ccol-cta-button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#ccol-cta-button {
+  background-color: whitesmoke;
+  border: 2px solid black;
+  padding: 10px;
+  cursor: pointer;
+  color: black;
+  transition: background-color 0.15s;
+}
+
+#ccol-cta-button:hover {
+  background-color: rgb(194, 194, 194);
+}
+
+/*add full-width input fields*/
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="select"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #ccc;
+  box-sizing: border-box;
+}
+/* set a style for all buttons*/
+button {
+  background-color: green;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  cursor: pointer;
+  width: 100%;
+}
+/*set styles for the cancel button*/
+.ccol-cancelbtn {
+  padding: 14px 20px;
+  background-color: #ff2e00;
+}
+/*float cancel and signup buttons and add an equal width*/
+.ccol-cancelbtn,
+.ccol-signupbtn {
+  float: left;
+  width: 50%;
+}
+/*add padding to container elements*/
+.ccol-container {
+  padding: 16px;
+}
+/*define the modal’s background*/
+
+.ccol-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
+}
+/* Container div for half */
+.ccol-half-line-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.ccol-cta-button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#ccol-cta-button {
+  background-color: whitesmoke;
+  border: 2px solid black;
+  padding: 10px;
+  cursor: pointer;
+  color: black;
+  transition: background-color 0.15s;
+}
+
+#ccol-cta-button:hover {
+  background-color: rgb(194, 194, 194);
+}
+
+.ccol-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+/*define the modal-content background*/
+
+.ccol-modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 80%;
+}
+/*define the close button*/
+
+.ccol-close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  color: #000;
+  font-size: 40px;
+  font-weight: bold;
+}
+/*define the close hover and focus effects*/
+
+.ccol-close:hover,
+.ccol-close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.ccol-clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.ccol-wide {
+  grid-column: span 2;
+}
+
+@media screen and (max-width: 300px) {
+  .ccol-cancelbtn,
+  .ccol-signupbtn {
+    width: 100%;
+  }
+
+  .ccol-grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
