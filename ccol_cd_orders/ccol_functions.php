@@ -369,47 +369,6 @@ function output_sermons_ajax_request() {
 add_action( 'wp_ajax_output_sermons_ajax_request', 'output_sermons_ajax_request' );
 add_action( 'wp_ajax_nopriv_output_sermons_ajax_request', 'output_sermons_ajax_request' );
 
-
-
-// // The function that handles ajax request from the frontend
-// function single_sermon_ajax_request() {
-//
-//   // _REQUEST is the PHP superglobal bringing in all the data sent via ajax
-//   if ( isset($_REQUEST) ) {
-//
-//     global $wpdb;
-//
-//     $id = $_REQUEST['id'];
-//
-//     $table_name = $wpdb->prefix . 'ccol_sermons';
-//
-//     $current_sermon = $wpdb->get_results("SELECT id,title,preacher_id,sermonDate from $table_name where id=$id");
-//
-//     $preacher_id =   $current_sermon[0]->preacher_id;
-//     $preachers_table = $wpdb->prefix . 'ccol_preachers';
-//     $preacher = $wpdb->get_results("SELECT name from $preachers_table where id=$preacher_id");
-//
-//     $output_data = [
-//       'id' => $current_sermon[0]->id,
-//       'title' => $current_sermon[0]->title,
-//       'preacher' => $preacher[0]->name,
-//       'date' => $current_sermon[0]->sermonDate,
-//     ];
-//
-//   // Return the output data as a Json Success
-//   wp_send_json_success( $data = $output_data );
-//
-//   // Killing the Ajax function
-//   die();
-//   }
-// }
-//
-//
-// // Hooking the ajax function into wordpress
-// add_action( 'wp_ajax_single_sermon_ajax_request', 'single_sermon_ajax_request' );
-// add_action( 'wp_ajax_nopriv_single_sermon_ajax_request', 'single_sermon_ajax_request' );
-
-
 // The function that handles ajax request from the frontend
 function create_new_booking_ajax_request() {
 
